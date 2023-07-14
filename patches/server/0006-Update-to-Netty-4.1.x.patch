@@ -5,11 +5,11 @@ Subject: [PATCH] Update to Netty 4.1.x
 
 
 diff --git a/build.gradle.kts b/build.gradle.kts
-index 3938905ca58c3d1cd1db4fa9632637b7a43ff8c5..d4896940f221e95a581d067e08d17bddfd4452bf 100644
+index 0e0b3cc078f4aa08c70aff15c9de2adcfda0b2ed..38d6611763c227a7027b1a40a562e48a72c3530c 100644
 --- a/build.gradle.kts
 +++ b/build.gradle.kts
 @@ -13,7 +13,7 @@ dependencies {
-     implementation(project(":pandaspigot-api"))
+     implementation(project(":nookspigot-api"))
  
      // Minecraft libraries:
 -    implementation("com.mojang:netty:1.7.7")

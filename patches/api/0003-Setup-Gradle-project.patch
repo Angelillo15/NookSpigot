@@ -6,7 +6,7 @@ Subject: [PATCH] Setup Gradle project
 
 diff --git a/build.gradle.kts b/build.gradle.kts
 new file mode 100644
-index 0000000000000000000000000000000000000000..a739f2e6736456b3b03eee79771bac58e081e564
+index 0000000000000000000000000000000000000000..e8c7947b9b1251f5b35014d5596acb2ae3d74412
 --- /dev/null
 +++ b/build.gradle.kts
 @@ -0,0 +1,122 @@
@@ -86,7 +86,7 @@ index 0000000000000000000000000000000000000000..a739f2e6736456b3b03eee79771bac58
 +            }
 +
 +            pom {
-+                url.set("https://github.com/hpfxd/PandaSpigot")
++                url.set("https://github.com/Nookure/NookSpigot")
 +                description.set(project.description)
 +                name.set(project.name)
 +                // if this is a CI build, set version as the run id

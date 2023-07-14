@@ -6,7 +6,7 @@ Subject: [PATCH] Setup Gradle project
 
 diff --git a/build.gradle.kts b/build.gradle.kts
 new file mode 100644
-index 0000000000000000000000000000000000000000..3938905ca58c3d1cd1db4fa9632637b7a43ff8c5
+index 0000000000000000000000000000000000000000..0e0b3cc078f4aa08c70aff15c9de2adcfda0b2ed
 --- /dev/null
 +++ b/build.gradle.kts
 @@ -0,0 +1,114 @@
@@ -22,7 +22,7 @@ index 0000000000000000000000000000000000000000..3938905ca58c3d1cd1db4fa9632637b7
 +}
 +
 +dependencies {
-+    implementation(project(":pandaspigot-api"))
++    implementation(project(":nookspigot-api"))
 +
 +    // Minecraft libraries:
 +    implementation("com.mojang:netty:1.7.7")
@@ -49,7 +49,7 @@ index 0000000000000000000000000000000000000000..3938905ca58c3d1cd1db4fa9632637b7
 +fun TaskContainer.registerRunTask(
 +    name: String, block: JavaExec.() -> Unit
 +): TaskProvider<JavaExec> = register<JavaExec>(name) {
-+    group = "pandaspigot"
++    group = "nookspigot"
 +    standardInput = System.`in`
 +    workingDir = rootProject.layout.projectDirectory.dir(
 +        providers.gradleProperty("runWorkDir").forUseAtConfigurationTime().orElse("run")
@@ -101,7 +101,7 @@ index 0000000000000000000000000000000000000000..3938905ca58c3d1cd1db4fa9632637b7
 +            attributes(
 +                "Main-Class" to "org.bukkit.craftbukkit.Main",
 +                "Implementation-Title" to "CraftBukkit",
-+                "Implementation-Version" to "git-PandaSpigot-$implementationVersion",
++                "Implementation-Version" to "git-nookspigot-$implementationVersion",
 +                "Implementation-Vendor" to date,
 +                "Specification-Title" to "Bukkit",
 +                "Specification-Version" to project.version,

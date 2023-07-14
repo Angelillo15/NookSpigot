@@ -5,7 +5,7 @@ Subject: [PATCH] Rebrand
 
 
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 864b3bc1375cb72588b63855eee8fa4ff569a5d3..7d19ec833d61c2f75b5eb75d7eb291c7366a1a9a 100644
+index 864b3bc1375cb72588b63855eee8fa4ff569a5d3..02ed25bf21f6f0f8860db0e3e28196b522bb5178 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -1084,7 +1084,7 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
@@ -13,7 +13,7 @@ index 864b3bc1375cb72588b63855eee8fa4ff569a5d3..7d19ec833d61c2f75b5eb75d7eb291c7
  
      public String getServerModName() {
 -        return "PaperSpigot"; // PaperSpigot - PaperSpigot > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "PandaSpigot"; // PandaSpigot - PandaSpigot > // PaperSpigot - PaperSpigot > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "NookSpigot"; // NookSpigot - Nookspigot > // PandaSpigot - PandaSpigot // PaperSpigot - PaperSpigot > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public CrashReport b(CrashReport crashreport) {

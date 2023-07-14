@@ -1,9 +1,9 @@
-rootProject.name = "pandaspigot"
+rootProject.name = "NookSpigot"
 
 includeBuild("build-logic")
 
-this.setupSubproject("pandaspigot-server", "PandaSpigot-Server")
-this.setupSubproject("pandaspigot-api", "PandaSpigot-API")
+this.setupSubproject("nookspigot-server", "NookSpigot-Server")
+this.setupSubproject("nookspigot-api", "NookSpigot-API")
 this.setupSubproject("paperclip", "paperclip")
 
 fun setupSubproject(name: String, dir: String) {

@@ -1,7 +1,7 @@
 /.idea/
 /base/mc-dev/
-/PandaSpigot-API/
-/PandaSpigot-Server/
+/NookSpigot-API/
+/NookSpigot-Server/
 *.iml
 *.DS_Store
 run/

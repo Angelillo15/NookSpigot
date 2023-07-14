@@ -86,14 +86,14 @@ case "$1" in
         cd "$basedir"
     ;;
     "a" | "api")
-        cd "$basedir/PandaSpigot-API"
+        cd "$basedir/NookSpigot-API"
     ;;
     "s" | "server")
-        cd "$basedir/PandaSpigot-Server"
+        cd "$basedir/NookSpigot-Server"
     ;;
     "c" | "clean")
-        rm -rf PandaSpigot-API
-        rm -rf PandaSpigot-Server
+        rm -rf NookSpigot-API
+        rm -rf NookSpigot-Server
         rm -rf base
         echo "Cleaned build files"
     ;;
@@ -108,8 +108,8 @@ case "$1" in
         case "$2" in
             "s" | "server")
             mkdir -p "$basedir/work/Temp"
-            echo "$basedir/PandaSpigot-Server" > "$basedir/work/Temp/PAPER_LAST_EDIT"
-            cd "$basedir/PandaSpigot-Server"
+            echo "$basedir/NookSpigot-Server" > "$basedir/work/Temp/PAPER_LAST_EDIT"
+            cd "$basedir/NookSpigot-Server"
             (
                 set -e
 
@@ -120,8 +120,8 @@ case "$1" in
             ;;
             "a" | "api")
             mkdir -p "$basedir/work/Temp"
-            echo "$basedir/PandaSpigot-API" > "$basedir/work/Temp/PAPER_LAST_EDIT"
-            cd "$basedir/PandaSpigot-API"
+            echo "$basedir/NookSpigot-API" > "$basedir/work/Temp/PAPER_LAST_EDIT"
+            cd "$basedir/NookSpigot-API"
             (
                 set -e
 
@@ -163,7 +163,7 @@ case "$1" in
         fi
     ;;
     *)
-        echo "PandaSpigot build tool command. This provides a variety of commands to build and manage the PandaSpigot build"
+        echo "NookSpigot build tool command. This provides a variety of commands to build and manage the NookSpigot build"
         echo "environment. For all of the functionality of this command to be available, you must first run the"
         echo "'install' command. View below for details. For essential building and patching, you do not need to do the install."
         echo ""
@@ -172,13 +172,13 @@ case "$1" in
         echo "  * setup               | Remap, decompile, and patch Minecraft. Can be run from anywhere."
         echo "  * p, patch            | Apply all patches to the project without building it. Can be run from anywhere."
         echo "  * j, jar              | Apply all patches and build the project, paperclip.jar will be output. Can be run from anywhere."
-        echo "  * c, clean            | Removes all generated files, PandaSpigot-API, PandaSpigot-Server, and work."
+        echo "  * c, clean            | Removes all generated files, NookSpigot-API, NookSpigot-Server, and work."
         echo "  * con, continue       | Shortcut command for running git am --continue, or git rebase --continue."
         echo ""
         echo " These commands require the install command before use:"
         echo "  * r, root             | Change directory to the root of the project."
-        echo "  * a. api              | Move to the PandaSpigot-API directory."
-        echo "  * s, server           | Move to the PandaSpigot-Server directory."
+        echo "  * a. api              | Move to the NookSpigot-API directory."
+        echo "  * s, server           | Move to the NookSpigot-Server directory."
         echo "  * e, edit             | Use to edit a specific patch, give it the argument \"server\" or \"api\""
         echo "                        | respectively to edit the correct project. Use the argument \"continue\" after"
         echo "                        | the changes have been made to finish and rebuild patches. Can be called from anywhere."

@@ -110,13 +110,13 @@ elif [ ! -d "base/Paper/PaperSpigot-Server" ]; then
     exit 1
 fi
 
-# Apply PandaSpigot
+# Apply NookSpigot
 (
-    applyPatch "base/Paper/PaperSpigot-API" PandaSpigot-API HEAD patches/api &&
-    applyPatch "base/Paper/PaperSpigot-Server" PandaSpigot-Server HEAD patches/server
+    applyPatch "base/Paper/PaperSpigot-API" NookSpigot-API HEAD patches/api &&
+    applyPatch "base/Paper/PaperSpigot-Server" NookSpigot-Server HEAD patches/server
     cd "$basedir"
 ) || (
-    echo "Failed to apply PandaSpigot Patches"
+    echo "Failed to apply NookSpigot Patches"
     exit 1
 ) || exit 1
 ) || exit 1
