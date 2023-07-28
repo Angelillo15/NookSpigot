@@ -24,10 +24,10 @@ jobs:
           git config --global init.defaultBranch master
 
       - name: Setup build environment
-        run: ./panda setup
+        run: ./nook setup
 
       - name: Apply patches
-        run: ./panda patch
+        run: ./nook patch
 
       - name: Build
         uses: burrunan/gradle-cache-action@v1
@@ -37,11 +37,11 @@ jobs:
 
       - name: Copy Paperclip jar
         run: |
-          cp -v "./paperclip/build/libs/paperclip-1.8.8-R0.1-SNAPSHOT.jar" "./pandaspigot-$GITHUB_RUN_NUMBER.jar"
+          cp -v "./paperclip/build/libs/paperclip-1.8.8-R0.1-SNAPSHOT.jar" "./nookspigot-$GITHUB_RUN_NUMBER.jar"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: Server JAR
-          path: pandaspigot-${{ github.run_number }}.jar
+          name: NookSpigot
+          path: nookspigot-${{ github.run_number }}.jar
           if-no-files-found: error

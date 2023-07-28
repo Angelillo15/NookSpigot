@@ -21,10 +21,10 @@ jobs:
           git config --global init.defaultBranch master
 
       - name: Setup build environment
-        run: ./panda setup
+        run: ./nook setup
 
       - name: Apply patches
-        run: ./panda patch
+        run: ./nook patch
 
       - name: Build
         uses: burrunan/gradle-cache-action@v1
