@@ -21,7 +21,9 @@ jobs:
           git config --global init.defaultBranch master
 
       - name: Setup build environment
-        run: ./nook setup
+        run: |
+          chmod +x ./nook
+          ./nook setup
 
       - name: Apply patches
         run: ./nook patch
